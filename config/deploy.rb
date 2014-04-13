@@ -13,6 +13,7 @@ set :rbenv_map_bins, %w{rake gem bundle ruby rails}
 
 # how many old releases do we want to keep, not much
 set :keep_releases, 5
+set :sidekiq_pid, 'tmp/pids/sidekiq.pid'
 
 # files we want symlinking to specific entries in shared
 set :linked_files, %w{config/database.yml .env}
@@ -34,6 +35,7 @@ set(:config_files, %w(
   monit
   unicorn.rb
   unicorn_init.sh
+  sidekiq_init.sh
 ))
 
 # which config files should be made executable after copying
@@ -64,6 +66,10 @@ set(:symlinks, [
   {
     source: "monit",
     link: "/etc/monit/conf.d/{{full_app_name}}.conf"
+  },
+  {
+    source: "sidekiq_init.sh",
+    link: "/etc/init.d/sidekiq_{{full_app_name}}"
   }
 ])
 
