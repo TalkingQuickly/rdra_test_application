@@ -52,6 +52,9 @@ GEM
       execjs
     coffee-script-source (1.7.0)
     connection_pool (1.2.0)
+    dotenv (0.10.0)
+    dotenv-rails (0.10.0)
+      dotenv (= 0.10.0)
     erubis (2.7.0)
     execjs (2.0.2)
     hike (1.2.3)
@@ -165,6 +168,7 @@ DEPENDENCIES
   capistrano-rails (~> 1.1.0)
   capistrano-rbenv (~> 2.0)
   coffee-rails (~> 4.0.0)
+  dotenv-rails
   jbuilder (~> 2.0)
   jquery-rails
   pg
