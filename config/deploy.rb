@@ -1,9 +1,9 @@
-set :application, 'app_name'
+set :application, 'simple_sidekiq'
 set :deploy_user, 'deploy'
 
 # setup repo details
 set :scm, :git
-set :repo_url, 'git@github.com:username/repo.git'
+set :repo_url, 'git@github.com:TalkingQuickly/rdra_test_application.git'
 
 # setup rvm.
 set :rbenv_type, :system
