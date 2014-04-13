@@ -42,6 +42,7 @@ set(:config_files, %w(
 # by deploy:setup_config
 set(:executable_config_files, %w(
   unicorn_init.sh
+  sidekiq_init.sh
 ))
 
 
