@@ -1,28 +1,13 @@
-== README
+# Reliably Deploying Rails Test Application
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Overview
 
-Things you may want to cover:
+This is a test Rails 4.1 Application used to ensure the sample Capistrano 3 Configuration used in the book Reliably Deploying Rails Applications works as expected.
 
-* Ruby version
+## Links
 
-* System dependencies
+The Book: <https://leanpub.com/deploying_rails_applications>
 
-* Configuration
+A simple Tutorial on using this configuration: <http://www.talkingquickly.co.uk/2014/01/deploying-rails-apps-to-a-vps-with-capistrano-v3/>
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+The Configuration: <https://github.com/TalkingQuickly/capistrano-3-rails-template>
