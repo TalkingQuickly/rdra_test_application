@@ -17,6 +17,8 @@ gem 'coffee-rails', '~> 4.0.0'
 # Background jobs
 gem 'sidekiq', '< 3'
 
+gem 'unicorn'
+
 # Use Capistrano To Deploy
 gem 'capistrano', '~> 3.1.0'
 
