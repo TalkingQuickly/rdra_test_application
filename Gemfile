@@ -18,20 +18,6 @@ gem 'coffee-rails', '~> 4.0.0'
 # Background jobs
 gem 'sidekiq', '< 3'
 
-gem 'unicorn'
-
-# Use Capistrano To Deploy
-gem 'capistrano', '~> 3.1.0'
-
-# rails specific capistrano funcitons
-gem 'capistrano-rails', '~> 1.1.0'
-
-# integrate bundler with capistrano
-gem 'capistrano-bundler'
-
-# if you are using RBENV
-gem 'capistrano-rbenv', "~> 2.0" 
-
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
