@@ -13,6 +13,25 @@ gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .js.coffee assets and views
 gem 'coffee-rails', '~> 4.0.0'
 
+# Use Unicorn as our app server
+gem 'unicorn'
+ 
+group :development do
+  gem 'capistrano', '~> 3.1.0'
+  
+  # rails specific capistrano funcitons
+  gem 'capistrano-rails', '~> 1.1.0'
+  
+  # integrate bundler with capistrano
+  gem 'capistrano-bundler'
+  
+  # if you are using RBENV
+  gem 'capistrano-rbenv', "~> 2.0" 
+  
+  # Include boilerplate tasks
+  gem 'capistrano-cookbook'
+end
+
 # Background jobs
 gem 'sidekiq', '< 3'
 
